@@ -5,11 +5,14 @@ import logo from '../assets/imgs/logo.png';
 function Head() {
   return (
     <nav>
-      <div><img src={logo} alt="App logo" /></div>
-      <div>
+      <div id="logo">
+        <img src={logo} alt="App logo" />
+        <h1>Space Travellers&apos; Hub</h1>
+      </div>
+      <div className="links">
         <NavLink to="/">Rockets</NavLink>
         <NavLink to="/missions">Mission</NavLink>
-        <div />
+
         <NavLink to="/profile">My profile</NavLink>
       </div>
     </nav>
