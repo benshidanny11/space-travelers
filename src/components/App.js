@@ -2,7 +2,7 @@ import '../assets/styles/main.css';
 import { Routes, Route } from 'react-router-dom';
 import Head from './Head';
 import Rockets from './pages/Rockets';
-import Missision from './pages/Missision';
+import Missions from './pages/Missions';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route exact="true" path="/" element={<Rockets />} />
 
-        <Route exact="true" path="/missions" element={<Missision />} />
+        <Route exact="true" path="/missions" element={<Missions />} />
 
       </Routes>
     </div>
