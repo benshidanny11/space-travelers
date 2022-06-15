@@ -3,50 +3,55 @@ table {
   width: 90%;
   margin: 1% auto;
 }
-table,th,td{
-    border-collapse: collapse;
+
+table,
+th,
+td {
+  border-collapse: collapse;
 }
-tr:nth-child(even){
-    background-color: #F2F2F2;
-}
-th:nth-child(4){
-  color: #fff;
-}
-tr .active-btn-one {
-  background-color:  #3592fa;
-  color: #fff;
-  border: none;
-}
- .active-btn-two{
-  border: red solid;
-  color: red;
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
 th,
 td {
   text-align: left;
   height: 100%;
-  border: solid 2px #d3d3d3;;
+  border: solid 2px #d3d3d3;
   padding: 1% 2px;
-  
 }
-th:nth-child(2) {
-  width: 50%;  
 
+th:nth-child(4) {
+  color: #fff;
 }
-.btn-one{
+
+tr .active-btn-one {
+  background-color: #3592fa;
+  color: #fff;
+  border: none;
+}
+
+.active-btn-two {
+  border: red solid;
+  color: red;
+}
+
+th:nth-child(2) {
+  width: 50%;
+}
+
+.btn-one {
   background-color: grey;
   border: none;
   font-size: 10px;
   color: #f2f2f2;
   padding: 4px;
 }
-.btn-two,.active-btn-two{
-  background-color: #F2F2F2;
+
+.btn-two,
+.active-btn-two {
+  background-color: #f2f2f2;
   height: 40px;
   padding: 4%;
 }
-
-/* td:nth-child(2){
-    padding: 1%; }
-  */
