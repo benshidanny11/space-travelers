@@ -5,7 +5,6 @@ import { reserveRocket } from '../../redux/actions/rocket';
 
 function Rocket({ rocket }) {
   const dispatch = useDispatch();
-  console.log(rocket.isBooked);
   return (
     <div className="rocket-item">
       <div className="rocket-img-container">
