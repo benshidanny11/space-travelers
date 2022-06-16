@@ -1,19 +1,16 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Mission from '../Mission';
 import '../../assets/styles/Missions.css';
-import { fetchData } from '../../redux/reducers/mission';
+import { fetchData as fetchMissions } from '../../redux/reducers/mission';
 
 function Missions() {
-  // only fetches data after being mounted
   const dispatch = useDispatch();
-  const mounted = useRef(false);
   useEffect(() => {
-    dispatch(fetchData());
-    mounted.current = true;
-    return () => {
-      mounted.current = false;
+    const fetchData = () => {
+      dispatch(fetchMissions());
     };
+    fetchData();
   }, []);
 
   const Missions = useSelector((state) => state.missions);

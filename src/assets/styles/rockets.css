@@ -1,0 +1,64 @@
+.rocket-item {
+  display: flex;
+  padding: 1rem;
+  margin: 0 5rem;
+}
+
+.rocket-img-container img {
+  width: 200px;
+}
+
+.rocket-details {
+  margin-left: 1rem;
+}
+
+.rocket-details p,
+.rocket-details button {
+  margin-top: 0.8rem;
+}
+
+.rocket-details p {
+  color: rgb(107, 107, 107);
+  line-height: 20px;
+}
+
+.rocket-details h3 {
+  color: rgb(71, 71, 71);
+}
+
+.button-rocket {
+  padding: 0.4rem 1rem;
+  background-color: #3592fa;
+  color: rgb(240, 240, 240);
+  border: none;
+  border-radius: 3px;
+}
+
+.button-rocket:hover {
+  background-color: #1c7ae6;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.button-res {
+  padding: 0.4rem 1rem;
+  background-color: #fff;
+  color: rgb(117, 117, 117);
+  border: rgb(117, 117, 117) solid 1px;
+  border-radius: 3px;
+}
+
+.button-res:hover {
+  background-color: rgb(240, 240, 240);
+  color: #b1b1b1;
+  border: rgb(158, 158, 158) solid 1px;
+  cursor: pointer;
+}
+
+.s-reserved {
+  background-color: #03b4b4;
+  color: rgb(255, 255, 255);
+  padding: 0.2rem 0.8rem;
+  cursor: pointer;
+  border-radius: 3px;
+}
