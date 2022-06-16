@@ -18,13 +18,16 @@ function Missions() {
 
   return (
     <table>
-      <tr>
-        <th>Mission</th>
-        <th>Description</th>
-        <th>Status</th>
-        {' '}
-        <th>last</th>
-      </tr>
+
+      <thead>
+        <tr>
+          <th>Mission</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th>last</th>
+        </tr>
+      </thead>
+
       {Missions.map((item) => (
         <Mission
           key={2}

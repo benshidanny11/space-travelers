@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `
+<div>
+  <nav>
+    <div
+      id="logo"
+    >
+      <img
+        alt="App logo"
+        src="logo.png"
+      />
+      <h1>
+        Space Travellers' Hub
+      </h1>
+    </div>
+    <div
+      className="links"
+    >
+      <a
+        aria-current="page"
+        className="active"
+        href="/"
+        onClick={[Function]}
+      >
+        Rockets
+      </a>
+      <a
+        className=""
+        href="/missions"
+        onClick={[Function]}
+      >
+        Mission
+      </a>
+      <a
+        className=""
+        href="/profile"
+        onClick={[Function]}
+      >
+        My profile
+      </a>
+    </div>
+  </nav>
+  <div />
+</div>
+`;
