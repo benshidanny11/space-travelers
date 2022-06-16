@@ -7,7 +7,6 @@ export default function Mission(props) {
   const {
     title, description, isMember, id,
   } = props;
-  console.log(id);
 
   const createMission = (missionId) => ({
     type: UPDATE_MEMBER,

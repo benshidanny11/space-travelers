@@ -6,14 +6,16 @@ import '../../assets/styles/rockets.css';
 import Rocket from '../items/rocket';
 
 function Rockets() {
+  const rockets = useSelector((state) => state.rockets);
   const dispatch = useDispatch();
   useEffect(() => {
     const fetchData = () => {
       dispatch(getRocetsAction());
     };
-    fetchData();
+    if (rockets.length === 0) {
+      fetchData();
+    }
   }, []);
-  const rockets = useSelector((state) => state.rockets);
   return (
     <div>
       {rockets.map((rocket) => (<Rocket rocket={rocket} key={uuid()} />))}
