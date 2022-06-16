@@ -1,26 +1,45 @@
 import React from 'react';
+import PropTypes, { bool } from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { reserveRocket } from '../../redux/actions/rocket';
 
 function Rocket({ rocket }) {
+  const dispatch = useDispatch();
+  console.log(rocket.isBooked);
   return (
-    <div>
-      <div>
+    <div className="rocket-item">
+      <div className="rocket-img-container">
         <img src={rocket.flickr_images} alt="Rocket img" />
       </div>
-      <div>
+      <div className="rocket-details">
         <h3>{rocket.rocket_name}</h3>
-        <p>{rocket.decription}</p>
+        <p>
+          {rocket.isBooked ? <span className="s-reserved">Reserved</span> : ' '}
+          {' '}
+          {rocket.description}
+        </p>
+        <button
+          type="button"
+          onClick={() => {
+            dispatch(reserveRocket(rocket.id));
+          }}
+          className={rocket.isBooked ? 'button-res' : 'button-rocket'}
+        >
+          {rocket.isBooked ? 'Cancel reservation' : 'Reserve rocket'}
+        </button>
       </div>
     </div>
   );
 }
 
 Rocket.propTypes = {
-    book: PropTypes.shape({
-      id: PropTypes.string,
-      title: PropTypes.string,
-      category: PropTypes.string,
-      author: PropTypes.string,
-    }).isRequired,
-  };
+  rocket: PropTypes.shape({
+    flickr_images: PropTypes.string,
+    rocket_name: PropTypes.string,
+    description: PropTypes.string,
+    isBooked: bool,
+    id: PropTypes.number,
+  }).isRequired,
+};
 
 export default Rocket;

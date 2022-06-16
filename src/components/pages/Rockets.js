@@ -2,7 +2,8 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { v4 as uuid } from 'uuid';
 import { getRocetsAction } from '../../redux/actions/rocket';
-import { Rocket } from '../items/rocket';
+import '../../assets/styles/rockets.css';
+import Rocket from '../items/rocket';
 
 function Rockets() {
   const dispatch = useDispatch();
