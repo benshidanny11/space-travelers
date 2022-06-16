@@ -1,15 +1,14 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchData as fetchMissions } from '../../redux/reducers/mission';
 import '../../assets/styles/myProfile.css';
+import { GET_MISSIONS } from '../../redux/actions/actionTypes';
 
 const MyProfile = () => {
   const dispatch = useDispatch();
   useEffect(() => {
-    const fetchData = () => {
-      dispatch(fetchMissions());
-    };
-    fetchData();
+    dispatch({
+      type: GET_MISSIONS,
+    });
   }, []);
 
   const Missions = useSelector((state) => state.missions);

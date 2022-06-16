@@ -1,4 +1,4 @@
-import { FETCH_MISSIONS, UPDATE_MEMBER } from '../actions/actionTypes';
+import { FETCH_MISSIONS, UPDATE_MEMBER, GET_MISSIONS } from '../actions/actionTypes';
 
 export const fetchData = () => async (dispatch) => {
   const res = await fetch('https://api.spacexdata.com/v3/missions');
@@ -24,6 +24,8 @@ export const missionsReducer = (state = initialMissions, action) => {
         }
         return obj;
       });
+    case GET_MISSIONS:
+      return [...state.filter((obj) => obj.isMember)];
 
     default:
       return state;
