@@ -42,15 +42,16 @@
 
 .button-res {
   padding: 0.4rem 1rem;
-  background-color: #e7e7e7;
+  background-color: #fff;
   color: rgb(117, 117, 117);
-  border: none;
+  border: rgb(117, 117, 117) solid 1px;
   border-radius: 3px;
 }
 
 .button-res:hover {
-  background-color: rgb(218, 218, 218);
-  color: #5e5e5e;
+  background-color: rgb(240, 240, 240);
+  color: #b1b1b1;
+  border: rgb(158, 158, 158) solid 1px;
   cursor: pointer;
 }
 
