@@ -1,18 +1,17 @@
-.profile-container{
-    display: grid;
-    grid-template-columns: auto auto;
-    margin: 4% auto;
-    width: 90%;
+.profile-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 4% auto;
+  width: 90%;
 }
 
-.mission-container{
-    border: solid 1px #d3d3d3;
-    margin-top: 3%;
+.mission-container {
+  border: solid 1px #d3d3d3;
+  margin-top: 3%;
 }
 
-
-li{
-    list-style: none;
-    border-bottom: 1px solid #d3d3d3;
-    padding:4%;
+li {
+  list-style: none;
+  border-bottom: 1px solid #d3d3d3;
+  padding: 4%;
 }
