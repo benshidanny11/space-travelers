@@ -3,6 +3,7 @@
   grid-template-columns: auto auto;
   margin: 4% auto;
   width: 90%;
+  gap: 2rem;
 }
 
 .mission-container {

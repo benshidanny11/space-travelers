@@ -25,7 +25,7 @@ export const missionsReducer = (state = initialMissions, action) => {
         return obj;
       });
     case GET_MISSIONS:
-      return [...state.filter((obj) => obj.isMember)];
+      return [...state];
 
     default:
       return state;

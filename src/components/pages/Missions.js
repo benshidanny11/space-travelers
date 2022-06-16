@@ -5,15 +5,17 @@ import '../../assets/styles/Missions.css';
 import { fetchData as fetchMissions } from '../../redux/reducers/mission';
 
 function Missions() {
+  const Missions = useSelector((state) => state.missions);
   const dispatch = useDispatch();
   useEffect(() => {
     const fetchData = () => {
       dispatch(fetchMissions());
     };
-    fetchData();
+    if (Missions.length === 0) {
+      fetchData();
+    }
   }, []);
 
-  const Missions = useSelector((state) => state.missions);
   return (
     <table>
       <tr>
