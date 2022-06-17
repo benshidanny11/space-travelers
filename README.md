@@ -4,7 +4,6 @@
 
 - React js
 - Redux
-- Bootstrap
 - Lots of love :heart:
 
 
@@ -20,7 +19,17 @@ To get a local copy up and running follow these simple example steps.
 - Run `npm install` command
 - Run `npm start` command
 
+## Screenshots
+
+![Rockets page](./src/assets/imgs/img1.png)
+![Missions page](./src/assets/imgs/img2.png)
+![My profile page](./src/assets/imgs/img3.png)
+
 ## Run Tests
+
+```
+npm run test
+```
 
 ```
 npx eslint .
