@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import { createMemoryHistory } from 'history';
 import { Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import Header from '../components/Head';
+import NavBar from '../components/NavBar';
 import Rocket from '../components/items/rocket';
 import store from '../redux/store/store';
 
@@ -12,7 +12,7 @@ describe('Test header', () => {
     const history = createMemoryHistory();
     render(
       <Router location={history.location} navigator={history}>
-        <Header />
+        <NavBar />
       </Router>,
 
     );
