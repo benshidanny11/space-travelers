@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/imgs/logo.png';
 
-function Head() {
+function NavBar() {
   return (
     <nav>
       <div id="logo">
@@ -19,4 +19,4 @@ function Head() {
   );
 }
 
-export default Head;
+export default NavBar;
